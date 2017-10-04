@@ -1,4 +1,4 @@
-var recipes = {beans: 'rice'} //define an empty recipes object
+var recipes = {beans: 'rice'}; //define an empty recipes object
 
 function updateObjectWithKeyAndValue(object, key, value) {
     return Object.assign({}, object, {[key]: value})
@@ -8,12 +8,12 @@ function updateObjectWithKeyAndValue(object, key, value) {
 
 
 function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
-  object[key] = value
+  object[key] = value;
   return object
 }
 
 function deleteFromObjectByKey(object, key){
-  var newObj = Object.assign({},object)
+  var newObj = Object.assign({},object);
   //console.log(newObj)
   delete newObj[key];
   //console.log(newObj)
@@ -23,7 +23,7 @@ function deleteFromObjectByKey(object, key){
 //deleteFromObjectByKey(recipes,'beans')
 
 function destructivelyDeleteFromObjectByKey(object, key){
-  delete object[key]
+  delete object[key];
   return object
 }
 
